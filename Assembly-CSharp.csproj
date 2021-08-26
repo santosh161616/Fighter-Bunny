@@ -66,6 +66,7 @@
     <Compile Include="Assets\Scripts\VampBullet.cs" />
     <Compile Include="Assets\Scripts\WaveSpawner.cs" />
     <Compile Include="Assets\Scripts\CameraFollow.cs" />
+    <Compile Include="Assets\Scripts\PickUp.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">

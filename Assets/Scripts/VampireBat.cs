@@ -24,6 +24,7 @@ public class VampireBat : Enemy
             if(Vector2.Distance(transform.position, player.position) > stopDistance)
             {
                 transform.position = Vector2.MoveTowards(transform.position, player.position, speed * Time.deltaTime);
+                Debug.Log(transform.position);
             }
             if(Time.time >= attackTime)
             {

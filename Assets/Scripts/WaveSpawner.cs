@@ -19,6 +19,8 @@ public class WaveSpawner : MonoBehaviour
     private Wave currentWave;
     private int currentWaveIndex;
     private Transform player;
+    private bool finishedSpawning;
+
     
     void Start()
     {
@@ -45,7 +47,32 @@ public class WaveSpawner : MonoBehaviour
             Transform randomSpot = spawnPoints[Random.Range(0, spawnPoints.Length)];
             Instantiate(randomEnemy, randomSpot.position, randomSpot.rotation);
             
+            if(i == currentWave.count - 1)
+            {
+                finishedSpawning = true;
+            }
+            else
+            {
+                finishedSpawning = false;
+            }
             yield return new WaitForSeconds(currentWave.timeBetweenSpawns);
         }        
+    }
+
+    private void Update()
+    {
+         if(finishedSpawning == true && GameObject.FindGameObjectsWithTag("Enemy").Length == 0)
+        {
+            finishedSpawning = false;
+            if(currentWaveIndex + 1 < waves.Length)
+            {
+                currentWaveIndex++;
+                StartCoroutine(StartNextWave(currentWaveIndex));
+            }
+            else
+            {
+                Debug.Log("Game Finished");
+            }
+        }
     }
 }
