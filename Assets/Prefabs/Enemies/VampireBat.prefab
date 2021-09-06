@@ -399,12 +399,14 @@ MonoBehaviour:
   damage: 1
   speed: 2
   timeBetweenAttacks: 3
-  pickUpChance: 30
+  pickUpChance: 20
   pickUps:
   - {fileID: 2543989310634667115, guid: 26b106bf2e68c0c469badc826df6e667, type: 3}
   - {fileID: 7638845307311667337, guid: 0e773dbe0fd4c4645b4827ae46bafd9c, type: 3}
   - {fileID: 1215311047945301485, guid: daa2fa21e085e4b46a407e73cf6c3670, type: 3}
   - {fileID: 8133600209044349718, guid: 475b2b71981064d4496bdf768e69c663, type: 3}
+  healthPickUpChance: 30
+  healthPickUp: {fileID: 4142764255452018577, guid: 24fe01bc6a7a5a149b029fae82ac07a0, type: 3}
   stopDistance: 2
   shotPoint: {fileID: 865477881219079186}
   VampireBullets: {fileID: 5261428016915279976, guid: ccc1ccef061053c4b8136f16b2f1d46e, type: 3}

@@ -7,6 +7,8 @@ TagManager:
   - Enemy
   - Projectile
   - Weapon
+  - PetrolPoints
+  - Boss
   layers:
   - Default
   - TransparentFX
@@ -19,7 +21,7 @@ TagManager:
   - Player
   - Enemy
   - Stopper
-  - 
+  - Boss
   - 
   - 
   - 

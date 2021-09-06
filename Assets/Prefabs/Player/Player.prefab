@@ -9,7 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1097297949848345937}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: shotPoint
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -951,9 +951,9 @@ GameObject:
   - component: {fileID: 3897772575646496775}
   - component: {fileID: 3897772575646496774}
   - component: {fileID: 2322293908561472196}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: Weapon_1
-  m_TagString: Untagged
+  m_TagString: Weapon
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1069,7 +1069,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3897772576728260125}
   - component: {fileID: 3897772576728260114}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: 5_0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1193,7 +1193,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 6
-  health: 10
+  health: 5
+  hearts:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  fullHeart: {fileID: 21300000, guid: 681f8aba43d437146a84ed47801bc7ab, type: 3}
+  emptyHeart: {fileID: 21300000, guid: 7813a8a0046ec104cbebcd46a2e45156, type: 3}
 --- !u!50 &556069483417263110
 Rigidbody2D:
   serializedVersion: 4

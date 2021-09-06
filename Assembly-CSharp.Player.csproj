@@ -61,12 +61,16 @@
     <Compile Include="Assets\Scripts\Enemy.cs" />
     <Compile Include="Assets\Scripts\Summoner.cs" />
     <Compile Include="Assets\Scripts\MeleeEnemy.cs" />
+    <Compile Include="Assets\Scripts\PickUp.cs" />
     <Compile Include="Assets\Scripts\Projectile.cs" />
+    <Compile Include="Assets\Scripts\HealthPickUp.cs" />
     <Compile Include="Assets\Scripts\VampireBat.cs" />
     <Compile Include="Assets\Scripts\VampBullet.cs" />
     <Compile Include="Assets\Scripts\WaveSpawner.cs" />
     <Compile Include="Assets\Scripts\CameraFollow.cs" />
-    <Compile Include="Assets\Scripts\PickUp.cs" />
+    <Compile Include="Assets\Scripts\PetrolBehaviour.cs" />
+    <Compile Include="Assets\Scripts\ChaseBehaviour.cs" />
+    <Compile Include="Assets\Scripts\Boss.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">
